@@ -112,6 +112,6 @@ git pull origin NombreDeBranch
 
 Hace una actualización en nuestro branch local, desde un branch remoto que indicamos en el comando.""")
 
-print("-------------")
+
 
 
