@@ -1,0 +1,141 @@
+#!/usr/bin/python
+
+# -*- coding: utf-8 -*-
+
+
+import os
+def menu():
+
+	"""
+
+	Función que limpia la pantalla y muestra nuevamente el menu
+
+	"""
+
+	os.system('cls') # NOTA para windows tienes que cambiar clear por cls
+
+	print ("Selecciona una opción")
+
+	print ("\t1 - primera opción")
+
+	print ("\t2 - segunda opción")
+
+	print ("\t3 - tercera opción")
+
+	print ("\t9 - salir")
+
+ 
+
+ 
+
+while True:
+
+	# Mostramos el menu
+
+	menu()
+
+ 
+
+	# solicituamos una opción al usuario
+
+	opcionMenu = input("inserta un numero valor >> ")
+
+ 
+
+	if opcionMenu=="1":
+
+		print ("")
+
+		input("Has pulsado la opción 1...\npulsa una tecla para continuar")
+
+	elif opcionMenu=="2":
+
+		print ("")
+
+		input("Has pulsado la opción 2...\npulsa una tecla para continuar")
+
+	elif opcionMenu=="3":
+
+		print ("")
+
+		input("Has pulsado la opción 3...\npulsa una tecla para continuar")
+
+	elif opcionMenu=="9":
+
+		break
+
+	else:
+
+		print ("")
+
+		input("No has pulsado ninguna opción correcta...\npulsa una tecla para continuar")
+		
+	
+#################################################################
+#IO Ej_02 
+
+### Calcular el factorial de un numero
+
+# -*- coding: utf-8 -*-
+
+ 
+
+def multiple(valor, multiple):
+
+    """
+
+    Funcion para calcular si el numero es multiplo
+
+    utilizando el modulo de la division
+
+    """
+
+    resto = valor % multiple
+
+    if resto == 0:
+
+        return True
+
+    else:
+
+        return False
+
+ 
+
+# lista que contendra los valores multiples de 3
+
+multiples_3=[]
+
+multiples_5=[]
+
+ 
+
+# bucle del 1 al 100
+
+for i in range(1,101):
+
+ 
+
+    if multiple(i,3):
+
+        multiples_3.append(i)
+
+ 
+
+    if multiple(i,5):
+
+        multiples_5.append(i)
+
+ 
+
+print ("Los multiples de 3 son:", multiples_3)
+
+print ("")
+
+print ("Los multiples de 5 son:", multiples_5)
+
+
+
+		
+		
+		
